@@ -9,6 +9,9 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component'; 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PageNoteFoundComponent } from './page-note-found/page-note-found.component';
+import { ArticlesModule } from './articles/articles.module';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     AboutComponent,
     PrivacyComponent,
-    TermsComponent
+    TermsComponent,
+    PageNoteFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ArticlesModule,
+    ProductsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
