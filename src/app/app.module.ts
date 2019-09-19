@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageNoteFoundComponent } from './page-note-found/page-note-found.component';
 import { ArticlesModule } from './articles/articles.module';
 import { ProductsModule } from './products/products.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { ProductsModule } from './products/products.module';
     AboutComponent,
     PrivacyComponent,
     TermsComponent,
-    PageNoteFoundComponent
+    PageNoteFoundComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
     ArticlesModule,
